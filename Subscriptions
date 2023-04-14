@@ -1,0 +1,30 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.lang.Math.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc = new Scanner(System.in);
+		int m=sc.nextInt();
+		while(m-->0){
+		    int members=sc.nextInt();
+		    int amount=sc.nextInt();
+		    if(members<6){
+		        System.out.println(amount);
+		    }
+		    else if(members%6==0){
+		        System.out.println(members/6*amount);
+		    }
+		    else{
+		        System.out.println((int)((members/6)+1)*amount);
+		    }
+		}
+	}
+}
