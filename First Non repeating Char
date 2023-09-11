@@ -1,0 +1,21 @@
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		boolean flag=true;
+		for(int i:s.toCharArray())
+		{
+		    if(s.indexOf(i) == s.lastIndexOf(i))
+		    {
+		        System.out.println("Non repeating char is "+(char)i);
+		        flag=false;
+		        break;
+		    }
+		}
+		if(flag)
+		{
+		    System.out.println("Nothing is repeated");
+		}
+	}
+}
